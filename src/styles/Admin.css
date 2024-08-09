@@ -1,0 +1,124 @@
+.admin-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px; /* Add border radius */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.greeting-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.admin-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333333;
+  transition: transform 1s ease-in-out; /* Add transition for smooth zoom out effect */
+  padding-top: 100px; /* Added padding to move it below the Navbar */
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin-top: 50px; /* Adjusted to create space between the heading and the cards */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 12px; /* Added border-radius */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Added shadow with increased spread */
+  padding: 20px;
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.card-icon {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  opacity: 0.5;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card-content p {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.more-info-button {
+  background-color: #ffffff;
+  color: #333333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.more-info-button:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Admin.css */
+.admin-body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light mode styles */
+.admin-body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+.admin-body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/* Greeting text color */
+.admin-body.dark-mode .admin-heading {
+  color: #ffffff;
+}
+
+/* Card text color */
+.admin-body.dark-mode .card-content h3,
+.admin-body.dark-mode .card-content p {
+  color: #ffffff;
+}
+
+/* More Info Button */
+.admin-body.dark-mode .more-info-button {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.admin-body.dark-mode .more-info-button:hover {
+  background-color: #555555;
+  color: #ffffff;
+}

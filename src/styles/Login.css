@@ -1,0 +1,137 @@
+/* Login.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* Ensure card is above the background */
+}
+
+.login-heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700; /* Bold */
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-group {
+  margin-bottom: 20px;
+}
+
+.login-form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500; /* Medium */
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+.login-form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 400; /* Regular */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.login-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600; /* Semi-Bold */
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.login-signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-signup-link a {
+  display: inline-block;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600; /* Semi-Bold */
+  transition: background-color 0.3s ease;
+}
+
+.login-signup-link a:hover {
+  background-color: #ff416c;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.social-button {
+  width: 48%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400; /* Regular */
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.social-button.google {
+  background-color: #db4437;
+}
+
+.social-button.facebook {
+  background-color: #4267b2;
+}
+
+.social-button:hover {
+  opacity: 0.9;
+}

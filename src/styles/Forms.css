@@ -1,0 +1,173 @@
+/* Base styles */
+:root {
+  --form-bg-color: #f4f4f4;
+  --form-text-color: #333333;
+  --card-bg-color: #ffffff;
+  --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  --button-bg-color: #007bff;
+  --button-hover-color: #0056b3;
+  --input-border-color: #ddd;
+  --input-readonly-bg: #f9f9f9;
+  --label-text-color: #333333; /* Default color for light theme */
+}
+
+/* Light Theme */
+.light-theme {
+  --form-bg-color: #f4f4f4;
+  --form-text-color: #333333;
+  --card-bg-color: #ffffff;
+  --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  --button-bg-color: #007bff;
+  --button-hover-color: #0056b3;
+  --input-border-color: #ddd;
+  --input-readonly-bg: #f9f9f9;
+  --label-text-color: #333333; /* Color for labels in light theme */
+}
+
+/* Dark Theme */
+.dark-theme {
+  --form-bg-color: #333333;
+  --form-text-color: #f4f4f4;
+  --card-bg-color: #444444;
+  --card-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  --button-bg-color: #1e90ff;
+  --button-hover-color: #1c86ee;
+  --input-border-color: #666666;
+  --input-readonly-bg: #555555;
+  --label-text-color: #f4f4f4; /* Color for labels in dark theme */
+}
+
+/* Apply base styles */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--form-bg-color);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 20px auto;
+  margin-top: 80px;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--form-text-color);
+  padding-top: 20px;
+  margin: 0;
+}
+
+.form-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.form-card {
+  background: var(--card-bg-color);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-card label {
+  font-size: 16px;
+  color: var(--label-text-color); 
+  margin-bottom: 5px;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 6px;
+  font-size: 16px;
+  color: var(--form-text-color); /* Ensure text color is set */
+}
+
+.form-card input[readonly] {
+  background-color: var(--input-readonly-bg);
+}
+
+.save-button {
+  background-color: var(--button-bg-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.save-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.form-groups {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between cards */
+  width: 100%; /* Full width of the container */
+  max-width: 1000px; /* Set a max-width if needed */
+  align-items: center;
+  justify-content: center;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--label-text-color);
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 45px;
+  margin-top: 7px;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.dark-theme .form-input {
+  background-color: #555;
+  color: #fff;
+}
+
+.light-theme .form-input {
+  background-color: #fff;
+  color: #000;
+}
+
+.dark-theme .form-container {
+  background-color: #333;
+  color: #fff;
+}
+
+.light-theme .form-container {
+  background-color: #fff;
+  color: #000;
+}

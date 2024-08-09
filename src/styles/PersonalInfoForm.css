@@ -1,0 +1,54 @@
+.personal-info-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .personal-info-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .personal-info-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .personal-info-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .personal-info-form input,
+  .personal-info-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .personal-info-form input {
+    height: 40px;
+  }
+  
+  .personal-info-form textarea {
+    height: 100px;
+  }
+  
+  .personal-info-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .personal-info-form button:hover {
+    background-color: #218838;
+  }
+  
